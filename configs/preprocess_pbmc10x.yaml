@@ -1,0 +1,31 @@
+# Preprocessing configuration for PBMC 10X dataset
+# Replace input_path with your local h5ad file location.
+
+input_path: "/path/to/pbmc_seurat_v4.h5ad"
+output_dir: "outputs/processed/pbmc10x"
+label_key: "celltype.l2"
+
+# Quality control
+min_genes: 300
+max_genes: 6000
+min_cells: 3
+min_counts: 1000
+max_counts: 20000
+max_mt_pct: 10.0
+
+# Doublet detection
+run_scrublet: true
+filter_doublets: true
+expected_doublet_rate: 0.06
+sim_doublet_ratio: 2.0
+scrublet_n_prin_comps: 30
+
+# HVG selection
+n_top_genes: 2000
+
+# Batch correction
+batch_key: null  # auto-detect
+run_harmony: true
+
+# Random seed
+random_state: 42

@@ -1,0 +1,28 @@
+# Vanilla Transformer baseline configuration
+# Trains a standard Transformer (StudentModel) from scratch with cross-entropy only.
+# This serves as a baseline to compare against the KDMT student.
+
+data_path: "outputs/processed/pbmc10x"
+output_dir: "outputs/vanilla_transformer"
+seed: 42
+
+# Model (same architecture as student for fair comparison)
+input_dim: 2000
+hidden_dim: 128
+num_heads: 4
+num_layers: 3
+num_classes: 31
+
+# Training
+batch_size: 64
+num_epochs: 50
+lr: 0.001
+weight_decay: 0.0001
+
+# No KD, no auxiliary objectives -- supervised classification only
+use_kd: false
+use_kd_feat: false
+use_kd_logit: false
+use_recon: false
+use_mask: false
+use_contrast: false

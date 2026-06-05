@@ -1,0 +1,32 @@
+# Ablation experiment configuration
+# Runs all 9 ablation configurations defined in experiments/run_ablation.py
+
+data_path: "outputs/processed/pbmc10x"
+output_dir: "outputs/ablation"
+teacher_checkpoint: "outputs/teacher/teacher_best.pth"
+seed: 42
+
+# Student model
+input_dim: 2000
+hidden_dim: 128
+num_heads: 4
+num_layers: 3
+num_classes: 31
+
+# Teacher model
+teacher_input_dim: 2000
+teacher_hidden_dim: 128
+teacher_num_heads: 4
+teacher_num_layers: 3
+
+# Training
+batch_size: 64
+num_epochs: 50
+lr: 0.001
+weight_decay: 0.0001
+use_kd: true
+kd_temperature: 2.0
+
+# Ablation configs are pre-defined in run_ablation.py:
+# Full_MultiTask, w/o_Reconstruction, w/o_Contrastive, KD_Only,
+# w/o_FeatureKD, w/o_MaskPred, w/o_LogitsKD, w/o_KD_Both, Student_CE_Only

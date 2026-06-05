@@ -1,0 +1,46 @@
+# Fine-tuned scGPT knowledge distillation configuration
+# Uses a teacher that has been fine-tuned on the target PBMC dataset.
+
+data_path: "outputs/processed/pbmc10x"
+output_dir: "outputs/finetuned_kd"
+teacher_checkpoint: "outputs/teacher/teacher_best.pth"
+seed: 42
+
+# Student model
+input_dim: 2000
+hidden_dim: 128
+num_heads: 4
+num_layers: 3
+num_classes: 31
+
+# Teacher model (previously fine-tuned on target data)
+teacher_input_dim: 2000
+teacher_hidden_dim: 128
+teacher_num_heads: 4
+teacher_num_layers: 3
+
+# Training
+batch_size: 64
+num_epochs: 50
+lr: 0.001
+weight_decay: 0.0001
+
+# KD settings
+use_kd: true
+use_kd_feat: true
+use_kd_logit: true
+kd_temperature: 2.0
+
+# Auxiliary objectives
+use_recon: true
+use_mask: true
+use_contrast: true
+
+# Loss weights
+lambda_feat: 0.5
+lambda_logit: 0.5
+lambda_recon: 0.5
+lambda_mask: 0.5
+lambda_contrast: 0.5
+
+mask_ratio: 0.15

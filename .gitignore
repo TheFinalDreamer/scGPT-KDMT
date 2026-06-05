@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environments
+.env
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Training outputs
+logs/
+outputs/
+results/
+checkpoints/
+wandb/
+tensorboard/
+runs/
+cache/
+tmp/
+temp/
+
+# Data
+data/raw/
+data/processed/
+data/splits/
+datasets/
+raw_data/
+processed_data/
+pretrained_models/
+
+# Large data files
+*.h5ad
+*.h5
+*.loom
+*.mtx
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.pkl
+*.joblib
+*.npy
+*.npz
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Logs
+*.log
+nohup.out
+
+# Secrets / credentials
+.env
+*.key
+id_rsa
+id_ed25519
+*.pem
+
+# Manuscript and documents
+*.pdf
+*.doc
+*.docx
+*.aux
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk

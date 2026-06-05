@@ -1,0 +1,10 @@
+# Figure generation configuration
+
+results_dir: "outputs/results"
+output_dir: "figures"
+seed: 42
+
+# Figure settings
+dpi: 300
+figsize_main: [8, 5]
+figsize_wide: [12, 5]

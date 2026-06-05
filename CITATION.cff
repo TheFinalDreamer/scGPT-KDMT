@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the corresponding manuscript."
+authors:
+  - family-names: Du
+    given-names: Wendong
+  - family-names: Mao
+    given-names: Tengyue
+  - family-names: Xiong
+    given-names: Wei
+  - family-names: Chen
+    given-names: Lvyi
+  - family-names: Liu
+    given-names: Cong
+title: "scGPT-KDMT: scGPT-guided Multi-task Knowledge Distillation Framework for Efficient Single-Cell Cell Type Classification"
+type: software
+license: MIT

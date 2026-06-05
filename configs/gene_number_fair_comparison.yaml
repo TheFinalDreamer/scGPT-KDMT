@@ -1,0 +1,44 @@
+# Gene-number fair comparison configuration
+# Runs experiments at multiple gene counts (e.g., 500, 1000, 2000, 4000, 8000)
+# to compare model performance under different input dimensions.
+# This ensures fair comparison between teacher and student at matched gene counts.
+
+data_path: "outputs/processed/pbmc10x"
+output_dir: "outputs/gene_number_fair"
+teacher_checkpoint: "outputs/teacher/teacher_best.pth"
+seed: 42
+
+# Gene counts to evaluate
+gene_counts: [500, 1000, 2000, 4000, 8000]
+
+# Base model settings
+hidden_dim: 128
+num_heads: 4
+num_layers: 3
+num_classes: 31
+
+# Training
+batch_size: 64
+num_epochs: 50
+lr: 0.001
+weight_decay: 0.0001
+
+# KD settings
+use_kd: true
+use_kd_feat: true
+use_kd_logit: true
+kd_temperature: 2.0
+
+# Auxiliary objectives
+use_recon: true
+use_mask: true
+use_contrast: true
+
+# Loss weights
+lambda_feat: 0.5
+lambda_logit: 0.5
+lambda_recon: 0.5
+lambda_mask: 0.5
+lambda_contrast: 0.5
+
+mask_ratio: 0.15

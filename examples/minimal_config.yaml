@@ -1,0 +1,39 @@
+# Minimal quick-test configuration
+# Use this config for a fast sanity check with small model settings.
+
+data_path: "outputs/processed/pbmc10x"
+output_dir: "outputs/quick_test"
+teacher_checkpoint: "outputs/teacher/teacher_best.pth"
+seed: 42
+
+# Small model for quick testing
+input_dim: 2000
+hidden_dim: 32
+num_heads: 2
+num_layers: 2
+num_classes: 31
+
+teacher_input_dim: 2000
+teacher_hidden_dim: 32
+teacher_num_heads: 2
+teacher_num_layers: 2
+
+batch_size: 64
+num_epochs: 3
+lr: 0.001
+weight_decay: 0.0001
+
+use_kd: true
+use_kd_feat: true
+use_kd_logit: true
+use_recon: true
+use_mask: true
+use_contrast: true
+
+kd_temperature: 2.0
+mask_ratio: 0.15
+lambda_feat: 0.5
+lambda_logit: 0.5
+lambda_recon: 0.5
+lambda_mask: 0.5
+lambda_contrast: 0.5
