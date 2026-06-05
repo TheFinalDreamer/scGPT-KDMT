@@ -16,17 +16,7 @@ https://github.com/TheFinalDreamer/scGPT-KDMT
 
 ---
 
-*Replace `USERNAME` with the actual GitHub username or organization name before submission.*
-
-## Version Without GitHub Link (for initial review)
-
----
-
-**Data availability**
-
-The PBMC benchmark dataset used in this study is publicly available from the 10x Genomics and Seurat reference resources, as described in the manuscript. The source code, preprocessing scripts, model implementation, configuration files, and reproducibility instructions are publicly available in this repository.
-
----
+Large-scale single-cell datasets and pretrained model weights are not redistributed in the repository due to file size and licensing restrictions.
 
 ## Software Availability
 
