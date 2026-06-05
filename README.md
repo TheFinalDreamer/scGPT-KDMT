@@ -301,7 +301,7 @@ Large-scale single-cell datasets and pretrained model weights are not redistribu
 
 If you use this code, please cite the corresponding manuscript:
 
-Du W, Mao T, Xiong W, Chen L, Liu C. scGPT-guided Multi-task Knowledge Distillation Framework for Efficient Single-Cell Cell Type Classification. Bioinformatics, submitted.
+Du W, Mao T, Xiong W, Chen Lvyi, Liu Cong. scGPT-guided Multi-task Knowledge Distillation Framework for Efficient Single-Cell Cell Type Classification. Bioinformatics, submitted.
 
 Citation metadata is provided in CITATION.cff.
 
