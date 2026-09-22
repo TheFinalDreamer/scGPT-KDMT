@@ -1,12 +1,12 @@
-# scGPT-KDMT: scGPT-guided Multi-task Knowledge Distillation for Efficient Single-Cell Cell Type Classification
+# scGPT-KDMT: Systematic Knowledge Distillation from scGPT for Efficient Single-Cell Cell Type Classification
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 2.0+](https://img.shields.io/badge/pytorch-2.0+-red.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-This repository accompanies the following Bioinformatics submission:
+Repository accompanying the manuscript:
 
-> **scGPT-guided Multi-task Knowledge Distillation Framework for Efficient Single-Cell Cell Type Classification**
+> **Systematic Knowledge Distillation from scGPT for Efficient Single-Cell Cell Type Classification**
 
 **Authors**: Wendong Du, Tengyue Mao, Wei Xiong, Lvyi Chen, Cong Liu
 
@@ -301,7 +301,7 @@ Large-scale single-cell datasets and pretrained model weights are not redistribu
 
 If you use this code, please cite the corresponding manuscript:
 
-Du W, Mao T, Xiong W, Chen Lvyi, Liu Cong. scGPT-guided Multi-task Knowledge Distillation Framework for Efficient Single-Cell Cell Type Classification. Bioinformatics, submitted.
+Du W, Mao T, Xiong W, Chen L, Liu C. Systematic Knowledge Distillation from scGPT for Efficient Single-Cell Cell Type Classification. Manuscript associated with this repository.
 
 Citation metadata is provided in CITATION.cff.
 

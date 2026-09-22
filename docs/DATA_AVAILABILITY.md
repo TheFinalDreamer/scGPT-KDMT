@@ -1,8 +1,8 @@
 # Data Availability Statement
 
-This document provides the Data Availability Statement for the Bioinformatics manuscript submission.
+This document provides the Data Availability Statement for the manuscript associated with this repository.
 
-## For the Manuscript and ScholarOne Submission
+## For the Manuscript Submission
 
 The following statement can be used as the Data Availability section of the manuscript:
 
